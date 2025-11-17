@@ -1,0 +1,143 @@
+[data-aos] {
+  transition-duration: 600ms;
+  transition-delay: 0ms;
+}
+
+[data-aos][data-aos-delay="100"].aos-animate {
+  transition-delay: 100ms;
+}
+[data-aos][data-aos-delay="200"].aos-animate {
+  transition-delay: 200ms;
+}
+[data-aos][data-aos-delay="300"].aos-animate {
+  transition-delay: 300ms;
+}
+[data-aos][data-aos-delay="400"].aos-animate {
+  transition-delay: 400ms;
+}
+[data-aos][data-aos-delay="500"].aos-animate {
+  transition-delay: 500ms;
+}
+[data-aos][data-aos-delay="600"].aos-animate {
+  transition-delay: 600ms;
+}
+[data-aos][data-aos-delay="700"].aos-animate {
+  transition-delay: 700ms;
+}
+[data-aos][data-aos-delay="800"].aos-animate {
+  transition-delay: 800ms;
+}
+[data-aos][data-aos-delay="900"].aos-animate {
+  transition-delay: 900ms;
+}
+[data-aos][data-aos-delay="1000"].aos-animate {
+  transition-delay: 1000ms;
+}
+[data-aos][data-aos-delay="1100"].aos-animate {
+  transition-delay: 1100ms;
+}
+[data-aos][data-aos-delay="1200"].aos-animate {
+  transition-delay: 1200ms;
+}
+[data-aos][data-aos-delay="1300"].aos-animate {
+  transition-delay: 1300ms;
+}
+[data-aos][data-aos-delay="1400"].aos-animate {
+  transition-delay: 1400ms;
+}
+[data-aos][data-aos-delay="1500"].aos-animate {
+  transition-delay: 1500ms;
+}
+[data-aos][data-aos-delay="1600"].aos-animate {
+  transition-delay: 1600ms;
+}
+[data-aos][data-aos-delay="1700"].aos-animate {
+  transition-delay: 1700ms;
+}
+[data-aos][data-aos-delay="1800"].aos-animate {
+  transition-delay: 1800ms;
+}
+[data-aos][data-aos-delay="1900"].aos-animate {
+  transition-delay: 1900ms;
+}
+[data-aos][data-aos-delay="2000"].aos-animate {
+  transition-delay: 2000ms;
+}
+
+[data-aos] {
+  transition-timing-function: cubic-bezier(0.42, 0, 1, 1);
+}
+
+/**
+ * Fade animations:
+ * fade
+ * fade-up, fade-down, fade-left, fade-right
+ * fade-up-right, fade-up-left, fade-down-right, fade-down-left
+ */
+[data-aos^=fade][data-aos^=fade] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+[data-aos^=fade][data-aos^=fade].aos-animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+[data-aos=fade-up] {
+  transform: translate3d(0, 100px, 0);
+}
+
+/**
+ * Zoom animations:
+ * zoom-in, zoom-in-up, zoom-in-down, zoom-in-left, zoom-in-right
+ * zoom-out, zoom-out-up, zoom-out-down, zoom-out-left, zoom-out-right
+ */
+[data-aos^=zoom][data-aos^=zoom] {
+  opacity: 0;
+  transition-property: opacity, transform;
+}
+[data-aos^=zoom][data-aos^=zoom].aos-animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+[data-aos=zoom-in] {
+  transform: scale(0.6);
+}
+
+/**
+ * Slide animations
+ */
+[data-aos^=slide][data-aos^=slide] {
+  transition-property: transform;
+}
+[data-aos^=slide][data-aos^=slide].aos-animate {
+  transform: translate3d(0, 0, 0);
+}
+
+[data-aos=slide-up] {
+  transform: translate3d(0, 100%, 0);
+}
+
+/**
+ * Flip animations:
+ * flip-left, flip-right, flip-up, flip-down
+ */
+[data-aos^=flip][data-aos^=flip] {
+  backface-visibility: hidden;
+  transition-property: transform;
+}
+
+[data-aos=flip-left] {
+  transform: perspective(2500px) rotateY(-100deg);
+}
+[data-aos=flip-left].aos-animate {
+  transform: perspective(2500px) rotateY(0);
+}
+
+[data-aos=flip-right] {
+  transform: perspective(2500px) rotateY(100deg);
+}
+[data-aos=flip-right].aos-animate {
+  transform: perspective(2500px) rotateY(0);
+}

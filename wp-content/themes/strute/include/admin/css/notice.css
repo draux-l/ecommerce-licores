@@ -1,0 +1,62 @@
+#hoot-welcome-msg { padding-left: 0; margin: 5px 0 25px; }
+.hoot-welcome-msg {}
+.hoot-welcome-content { display: flex; align-items: center; }
+
+.hoot-welcome-img {
+	display: block;
+	display: flex; align-items: flex-start; /* center */
+	background: #eee;
+	width: 275px; min-height: 145px; align-self: stretch;
+	flex-shrink: 0;
+	overflow: hidden !important;
+	box-shadow: 0 0 6px 1px rgba(200,200,200,0.5);
+	position: relative;
+	max-height: 350px !important;
+}
+.hoot-welcome-img--large { width: 350px; }
+.hoot-welcome-img--ss { align-items: center; background: #fff; padding: 15px; box-sizing: border-box; max-height: none !important; }
+.hoot-welcome-screenshot { width: 100%; }
+.hoot-welcome-scrollImg {
+	position: absolute; top: 0; left: 0;
+	animation: scrollImg 18s ease-in-out infinite;
+	/* animation-delay: 1s; */
+	animation-play-state: running;
+}
+.hoot-welcome-screenshot:hover { animation-play-state: paused; }
+@keyframes scrollImg {
+	0%  { transform: translateY(0); }
+	10%  { transform: translateY(0); }
+	90% { transform: translateY(calc(-100% + 250px)); }
+	95% { transform: translateY(calc(-100% + 250px)); }
+	98% { transform: translateY(0); }
+}
+
+.hoot-welcome-text {
+	flex-grow: 1;
+	padding-left: 40px;
+	margin: 20px 0 25px;
+}
+.hoot-welcome-text p { font-size: 14px; max-width: 700px; }
+.hoot-welcome-text a { font-weight: 600; }
+
+.hoot-welcome-actions { display: flex; max-width: 700px; gap: 10px; padding-top: 10px; }
+.hoot-welcome-actions > div { flex-grow: 1; background: #f1f1f1; border: solid 1px #ddd; text-align: center; width: 100%; }
+.hoot-welcome-multiactions > div { width: 50%; border-radius: 5px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between; }
+.hoot-welcome-actions > div > div { padding: 10px 8px; }
+.hoot-welcome-actions p { padding: 0; margin: 0; }
+.hoot-welcome-actions p + p { margin-top: 5px; }
+.button.hoot-welcome-btn { margin: 10px 0; font-size: 14px; line-height: 1.8em; padding: 10px 35px; }
+.hoot-welcome-text .hoot-welcome-note { font-size: 13px; color: #4b7ea7; font-style: italic; font-weight: 500; background: #fafafa; border-top: solid 1px #ddd; padding: 3px; }
+.button.hoot-btn-processplugin.updating-message:before { color: #a7a7a7; }
+.button.hoot-welcome-btn + div.error { margin: 0; }
+
+@media only screen and (max-width: 1078px) {
+	.hoot-welcome-actions { flex-direction: column; }
+	.hoot-welcome-multiactions > div { width: 100%; }
+}
+
+@media only screen and (max-width: 728px) {
+	.hoot-welcome-content { flex-direction: column; }
+	.hoot-welcome-img { max-width: 100%; height: 100px; align-items: flex-start; margin: 15px auto; }
+}
+
