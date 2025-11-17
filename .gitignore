@@ -1,0 +1,52 @@
+# === WordPress Core ===
+# Ignorar todo en la raíz...
+/index.php
+/license.txt
+/readme.html
+/wp-activate.php
+/wp-blog-header.php
+/wp-comments-post.php
+/wp-config-sample.php
+/wp-cron.php
+/wp-links-opml.php
+/wp-load.php
+/wp-login.php
+/wp-mail.php
+/wp-settings.php
+/wp-signup.php
+/wp-trackback.php
+/xmlrpc.php
+
+# Ignorar las carpetas principales del Core
+/wp-admin/
+/wp-includes/
+
+# === Contenido del Usuario ===
+# Ignorar el archivo de configuración REAL (¡Contiene contraseñas!)
+wp-config.php
+
+# Ignorar carpeta de subidas (imágenes, etc.)
+/wp-content/uploads/
+
+# Ignorar carpetas de caché
+/wp-content/cache/
+/wp-content/backups/
+
+# === Temas y Plugins ===
+# Ignorar temas que vienen por defecto
+/wp-content/themes/twentytwenty/
+/wp-content/themes/twentytwentyone/
+/wp-content/themes/twentytwentytwo/
+/wp-content/themes/twentytwentythree/
+/wp-content/themes/twentytwentyfour/
+/wp-content/themes/twentytwentyfive/
+
+# Ignorar plugins que vienen por defecto
+/wp-content/plugins/akismet/
+/wp-content/plugins/hello.php
+
+# === Archivos del Sistema ===
+.DS_Store
+Thumbs.db
+npm-debug.log
+*.log
